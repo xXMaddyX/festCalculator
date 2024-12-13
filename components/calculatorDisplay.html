@@ -1,0 +1,117 @@
+<div class="calculator-box">
+    <div class="calculator-display">
+        <p id="display">0</p>
+    </div>
+    <div class="button-box">
+        <div class="button-content">
+            <button class="func-button" value="%">%</button>
+            <button class="func-button" value="CE">CE</button>
+            <button class="func-button" value="C">C</button>
+            <button class="func-button" value="back">back</button>
+
+            <button class="func-button" value="1/x">1/x</button>
+            <button class="func-button" value="x2">x2</button>
+            <button class="func-button" value="2rootX">2rootX</button>
+            <button class="func-button" value="/">/</button>
+
+            <button class="num-button" value="7">7</button>
+            <button class="num-button" value="8">8</button>
+            <button class="num-button" value="9">9</button>
+            <button class="func-button" value="X">X</button>
+
+            <button class="num-button" value="4">4</button>
+            <button class="num-button" value="5">5</button>
+            <button class="num-button" value="6">6</button>
+            <button class="func-button" value="-">-</button>
+
+            <button class="num-button" value="1">1</button>
+            <button class="num-button" value="2">2</button>
+            <button class="num-button" value="3">3</button>
+            <button class="func-button" value="+">+</button>
+
+            <button class="func-button" value="+/-">+/-</button>
+            <button class="num-button" value="0">0</button>
+            <button class="func-button" value=",">,</button>
+            <button class="func-button" value="=">=</button>
+        </div>
+    </div>
+</div>
+<style>
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.calculator-box {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(209, 209, 209);
+    padding: 10px;
+}
+
+.calculator-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px;
+    width: 100%;
+    max-height: 75px;
+    height: 15%;
+    min-height: 70px;
+    border: 2px solid black;
+    background-color: rgb(146, 146, 146);
+}
+
+#display {
+    font-size: 3rem;
+    font-size: calc(2rem + 2vw);
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+}
+
+.button-content {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2%;
+}
+
+.button-content button {
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+    font-weight: 600;
+    font-size: calc(1rem + 1vw);
+    border-radius: 5px;
+}
+
+.func-button {
+    background-color: gray;
+}
+
+.func-button:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+.num-button {
+    background-color: rgb(199, 199, 199);
+}
+
+.num-button:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+</style>
